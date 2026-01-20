@@ -6,7 +6,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 source /etc/os-release
-OS_VERSION="$VERSION_ID"
+BRANCH="$VERSION_ID"
 
 TMP_DIR=$(mktemp -d)
 REPO="https://github.com/UzbekLinux/uzfiles.git"
