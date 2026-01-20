@@ -36,9 +36,9 @@ fi
 
 echo "копирую $COPY_DIR в корень..."
 if mount | grep -q "iso9660"; then
-    cp -rf "$TMP_DIR/live-tree/"* /
+    cp -rfv "$TMP_DIR/live-tree/"* /
 else
-    cp -rf "$TMP_DIR/tree/"* /
+    cp -rfv "$TMP_DIR/tree/"* /
 fi
 
 if [[ -f /tmp/update.sh ]]; then
